@@ -10,11 +10,14 @@ export class CarDetailsComponent {
 
     car: {id, model, name};
 
-    constructor(private carsService: CarsService) {
-        //this.car = this.carsService.getCar(id);
+    constructor(private carsService: CarsService,
+            private router: Router, 
+            private activatedRoute: ActivatedRoute) {
+        // read id parameter from snapshot
+        // download one car with specific id from service
     }
 
     gotoCars() {
-        
+        // add navigation back to cars list
     }
 }

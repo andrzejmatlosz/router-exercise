@@ -7,7 +7,6 @@ import { MovieRoutingModule } from './movie-routing.module';
 import { MovieListComponent } from './movieList.component';
 import { MovieDetailsComponent } from './movieDetails.component';
 import { MovieHomeComponent } from './movieHome.component';
-import { MovieCenterComponent } from './movieCenter.component';
 
 import { MoviesService } from './movies.service';
 
@@ -19,8 +18,7 @@ import { MoviesService } from './movies.service';
     declarations: [ 
         MovieListComponent,
         MovieDetailsComponent,
-        MovieHomeComponent,
-        MovieCenterComponent
+        MovieHomeComponent
     ],
     providers: [ MoviesService ]
 })

@@ -10,11 +10,12 @@ export class CarListComponent {
     
     cars: Array<{id, model, name}>;
 
-    constructor (private carsService: CarsService) {
+    constructor (private carsService: CarsService, 
+            private router: Router) {
         this.cars = carsService.getCars();
     }
 
     selectCar (car) {
-        
+        // ... add navigation to car details
     }
 }
